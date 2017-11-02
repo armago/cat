@@ -1,29 +1,15 @@
-//Select include SdFat library from Sketch menu 
-#include <ArduinoStream.h>
-#include <bufstream.h>
-#include <ios.h>
-#include <iostream.h>
-#include <istream.h>
-#include <MinimumSerial.h>
-#include <ostream.h>
-#include <Sd2Card.h>
-#include <SdBaseFile.h>
-#include <SdFat.h>
-#include <SdFatConfig.h>
-#include <SdFatmainpage.h>
-#include <SdFatStructs.h>
-#include <SdFatUtil.h>
-#include <SdFile.h>
-#include <SdInfo.h>
-#include <SdSpi.h>
-#include <SdStream.h>
-#include <SdVolume.h>
-
-//Select include SFEMP3Shield library from Sketch menu
-
 #include <SFEMP3Shield.h>
 #include <SFEMP3ShieldConfig.h>
 #include <SFEMP3Shieldmainpage.h>
+
+#include <BlockDriver.h>
+#include <FreeStack.h>
+#include <MinimumSerial.h>
+#include <SdFat.h>
+#include <SdFatConfig.h>
+#include <SysCall.h>
+
+
 int trackNumber = 1; // variable for track number
 
 SdFat sd; // Create SDFat object. 
